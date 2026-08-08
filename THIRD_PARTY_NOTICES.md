@@ -1,6 +1,12 @@
 # Third-party notices
 
-## tja2fumen
+"Bundled components" covers third-party code that ships inside Bachi, with its
+license text. "Acknowledgements" credits projects Bachi builds *on* without
+redistributing any of their code.
+
+## Bundled components
+
+### tja2fumen
 
 The TJA-to-fumen conversion model in `src/model/tjaImport.ts` is derived in
 part from [tja2fumen](https://github.com/vivaria/tja2fumen).
@@ -27,7 +33,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-## TaikoSoundEditor nus3bank template
+### TaikoSoundEditor nus3bank template
 
 `src/assets/song-template.nus3bank` is copied from
 [TaikoSoundEditor](https://github.com/NotImplementedLife/TaikoSoundEditor).
@@ -53,3 +59,18 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## Acknowledgements
+
+No code from the projects below is bundled in Bachi; they are credited for the
+knowledge and formats the editor builds on.
+
+### TaikoLocalServer
+
+[TaikoLocalServer](https://github.com/asesidaa/TaikoLocalServer) is the server
+implementation whose data formats Bachi's server-data editing targets (the dan
+course files in `src/codec/serverdata/`). Bachi reads and writes those formats
+from a clean-room implementation and redistributes none of its code.
+
+The repository publishes no license file, so no license is asserted here and
+none of its source may be vendored into this project.
